@@ -1,0 +1,23 @@
+{
+  "label": "Ferdi Bilgic CMS for Developers Best Practices Practicum",
+  "author": {
+    "name": "Ferdi Bilgic",
+    "email": "ferdi.bilgic@bonana.com",
+    "url": "https://bonana.com/"
+  },
+  "documentation_url": "",
+  "example_url": "",
+  "preview_path": "./templates/blank.html",
+  "screenshot_path": "",
+  "enable_domain_stylesheets": false,
+  "license": "./license.txt",
+  "responsive_breakpoints": [
+    {
+      "name": "mobile",
+      "mediaQuery": "@media (max-width: 767px)",
+      "previewWidth": {
+        "value": 477
+      }
+    }
+  ]
+}

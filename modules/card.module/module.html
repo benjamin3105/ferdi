@@ -1,0 +1,17 @@
+<section class="cards">
+  {% for card in module.card %}
+  <div class="team-member">
+    <div class="team-member--image">
+      <img
+        src="{{ card.card_image.src.default.src }}"
+        alt="{{ card.card_image.alt }}"
+      />
+    </div>
+    <div class="team-member--content">
+      <h3 class="team-member--name">{{ card.card_name }}</h3>
+      <p class="team-member--position">{{ card.card_position }}</p>
+      <div class="team-member--bio">{{ card.card_bio }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</section>

@@ -1,0 +1,16 @@
+[
+  {
+    "label": "Quote title",
+    "name": "quote_title",
+    "type": "text",
+    "required": true,
+    "default": "This is my new quote"
+  },
+  {
+    "name": "header_title",
+    "label": "Title",
+    "required": true,
+    "type": "text",
+    "default": "Ferdi Bilgic"
+  }
+]

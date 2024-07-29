@@ -1,0 +1,25 @@
+<!--
+  templateType: section
+  label: Columns Section
+  isAvailableForNewContent: true
+  description: "This is a section with multiple columns"
+-->
+{% dnd_section background_color={{ context.background_color or "#efefef" }}, vertical_alignment="MIDDLE" %}
+<div class="column">
+  {% dnd_column offset=0, width=4 %} {% dnd_row %} {% dnd_module path="@hubspot/rich_text", html={{
+  context.column_one_content or "
+  <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua.
+  </p>
+  " }} %} {% end_dnd_module %} {% end_dnd_row %} {% end_dnd_column %}
+</div>
+<div class="column">
+  {% dnd_column offset=4, width=4 %} {% dnd_row %} {% dnd_module path="@hubspot/linked_image", img={ "alt":
+  context.column_two_image_alt or "Default Image", "loading": context.column_two_image_loading or "lazy", "max_height":
+  context.column_two_image_height or 451, "max_width": context.column_two_image_width or 605, "size_type":
+  "auto_custom_max", "src": context.column_two_image or get_asset_url("../images/placeholder.jpg") } %} {%
+  end_dnd_module %} {% end_dnd_row %} {% end_dnd_column %}
+</div>
+{% end_dnd_section %}

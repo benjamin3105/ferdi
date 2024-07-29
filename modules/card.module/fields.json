@@ -1,0 +1,70 @@
+[
+  {
+    "label": "Card",
+    "name": "card",
+    "type": "group",
+    "occurrence": {
+      "default": 3,
+      "min": 1,
+      "sorting_label_field": "card.title"
+    },
+    "children": [
+      {
+        "name": "card_image",
+        "label": "Image",
+        "required": true,
+        "responsive": true,
+        "resizable": true,
+        "type": "image",
+        "default": {
+          "src": "",
+          "alt": "This is an image"
+        }
+      },
+      {
+        "name": "card_name",
+        "label": "Name",
+        "required": true,
+        "type": "text",
+        "default": "Ferdi Bilgic"
+      },
+      {
+        "name": "card_position",
+        "label": "Position",
+        "required": true,
+        "type": "text",
+        "default": "Front-end Developer"
+      },
+      {
+        "name": "card_bio",
+        "label": "Bio",
+        "required": true,
+        "type": "richtext",
+        "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+      }
+    ],
+    "default": [
+      {
+        "image": {
+          "loading": "lazy"
+        },
+        "src": "https://images.unsplash.com/photo-1721778775422-8cf9894040a9?fm=jpg",
+        "text": "<h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+      },
+      {
+        "image": {
+          "loading": "lazy"
+        },
+        "src": "https://images.unsplash.com/photo-1721778775422-8cf9894040a9?fm=jpg",
+        "text": "<h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+      },
+      {
+        "image": {
+          "loading": "lazy"
+        },
+        "src": "https://images.unsplash.com/photo-1721778775422-8cf9894040a9?fm=jpg",
+        "text": "<h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+      }
+    ]
+  }
+]

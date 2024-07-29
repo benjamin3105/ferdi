@@ -1,0 +1,21 @@
+<!--
+  templateType: global_partial
+  label: Header
+-->
+<header class="header">
+  <div class="container">
+    <a
+      href="#main-content"
+      class="header-skip"
+      >Skip to content</a
+    >
+    <div class="header-container content-wrapper">
+      <div class="header-logo">{% module "site_logo" path="@hubspot/logo" img={ "loading": "eager" } %}</div>
+      <div class="header-column">
+        <div class="header__row">
+          <div class="header-quote">{% module "quote" path="../../modules/quote", label="Quote" %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
